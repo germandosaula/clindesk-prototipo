@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clindesk | Nueva Cita</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="pagina">
+      <aside class="lateral">
+        <div class="zona-logo">
+          <img src="img/Logo.png" alt="Logo Clindesk" class="logo-imagen" />
+          <h1 class="logo-texto">Clindesk</h1>
+        </div>
+        <nav class="menu">
+          <a href="index.html">Inicio</a>
+          <a href="pacientes.html">Pacientes</a>
+          <a href="detalle-paciente.html">Detalle Paciente</a>
+          <a class="activo" href="nueva-cita.html">Nueva Cita</a>
+          <a href="admin.html">Administración</a>
+        </nav>
+      </aside>
+
+      <main class="contenido">
+        <header class="header">
+          <h2>Formulario de nueva cita</h2>
+          <span class="etiqueta">Formulario visual</span>
+        </header>
+
+        <section class="bloque">
+          <form>
+            <div class="campos-form">
+              <div>
+                <label for="paciente">Paciente</label>
+                <input id="paciente" type="text" placeholder="Nombre del paciente" required />
+              </div>
+              <div>
+                <label for="profesional">Profesional</label>
+                <select id="profesional" required>
+                  <option value="">Seleccionar</option>
+                  <option>Dra. Ortega</option>
+                  <option>Dr. Molina</option>
+                  <option>Dra. Ruiz</option>
+                </select>
+              </div>
+              <div>
+                <label for="fecha">Fecha</label>
+                <input id="fecha" type="date" required />
+              </div>
+              <div>
+                <label for="hora">Hora</label>
+                <input id="hora" type="time" required />
+              </div>
+              <div>
+                <label for="tipo">Tipo de cita</label>
+                <select id="tipo" required>
+                  <option value="">Seleccionar</option>
+                  <option>Primera visita</option>
+                  <option>Revisión</option>
+                  <option>Tratamiento</option>
+                </select>
+              </div>
+              <div>
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="tel" placeholder="600123456" required />
+              </div>
+            </div>
+
+            <div style="margin-top: 14px">
+              <label for="observaciones">Observaciones</label>
+              <textarea id="observaciones" placeholder="Añade notas para la cita..."></textarea>
+            </div>
+
+            <div class="acciones">
+              <button type="submit" class="boton">Guardar cita</button>
+              <a href="pacientes.html" class="boton" style="background: #4b5563">Cancelar</a>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

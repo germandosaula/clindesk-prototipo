@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clindesk | Detalle Paciente</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="pagina">
+      <aside class="lateral">
+        <div class="zona-logo">
+          <img src="img/Logo.png" alt="Logo Clindesk" class="logo-imagen" />
+          <h1 class="logo-texto">Clindesk</h1>
+        </div>
+        <nav class="menu">
+          <a href="index.html">Inicio</a>
+          <a href="pacientes.html">Pacientes</a>
+          <a class="activo" href="detalle-paciente.html">Detalle Paciente</a>
+          <a href="nueva-cita.html">Nueva Cita</a>
+          <a href="admin.html">Administración</a>
+        </nav>
+      </aside>
+
+      <main class="contenido">
+        <header class="header">
+          <h2>Detalle de paciente</h2>
+          <span class="etiqueta">Paciente: P-001</span>
+        </header>
+
+        <section class="row" style="grid-template-columns: 1fr 1fr">
+          <article class="bloque">
+            <h3>Datos personales</h3>
+            <p><strong>Nombre:</strong> Lucía Gómez</p>
+            <p><strong>DNI:</strong> 12345678A</p>
+            <p><strong>Teléfono:</strong> 600111222</p>
+            <p><strong>Email:</strong> lucia@correo.com</p>
+          </article>
+
+          <article class="bloque">
+            <h3>Última cita</h3>
+            <p><strong>Fecha:</strong> 15/06/2026</p>
+            <p><strong>Profesional:</strong> Dra. Ortega</p>
+            <p><strong>Motivo:</strong> Revisión general</p>
+            <p><strong>Estado:</strong> Confirmada</p>
+          </article>
+        </section>
+
+        <section class="bloque" style="margin-top: 16px">
+          <h3>Observaciones clínicas</h3>
+          <p>
+            Paciente con evolución favorable. Se recomienda revisión en 6 meses y
+            mantener higiene bucodental reforzada.
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

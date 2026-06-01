@@ -1,0 +1,110 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f5fa;
+  color: #1f2a44;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.pagina { display: flex; min-height: 100vh; }
+.lateral {
+  width: 220px;
+  padding: 20px;
+  background: #fff;
+  border-right: 1px solid #cfd8e3;
+}
+
+.zona-logo { text-align: center; margin-bottom: 16px; }
+.logo-imagen { width: 90px; height: auto; margin-bottom: 8px; }
+.logo-texto { margin-top: 0; color: #1f3d74; }
+
+.menu a {
+  display: block;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  color: #3d4f70;
+}
+.menu a:hover, .menu a.activo {
+  background: #dce9f9;
+  color: #1f3d74;
+  font-weight: 700;
+}
+
+.contenido { flex: 1; padding: 20px; }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.etiqueta {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #1f3d74;
+  background: #dce9f9;
+}
+
+.bloque {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.principal { color: #fff; background: #2b7bb8; }
+.principal p { color: #e8f4ff; }
+
+.row, .campos-form { display: flex; flex-wrap: wrap; }
+.row { gap: 12px; }
+.campos-form { gap: 10px; }
+.columns .bloque { flex: 1; min-width: 180px; }
+.campos-form > div { flex: 1; min-width: 220px; }
+
+.numero { margin: 8px 0; font-size: 28px; font-weight: 700; }
+.tabla { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e1e7ef; }
+th, label { color: #4b5e80; }
+
+.estado-ok { color: #148a56; font-weight: 700; }
+.estado-pendiente { color: #b36b00; font-weight: 700; }
+
+.boton {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  background: #1f3d74;
+}
+.boton:hover { background: #18325f; }
+
+label { display: block; margin-bottom: 5px; }
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #cfd8e3;
+  border-radius: 6px;
+}
+
+.acciones { margin-top: 15px; }
+.acciones .boton { margin-right: 8px; }
+
+@media (max-width: 900px) {
+  .pagina { flex-direction: column; }
+  .lateral {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid #cfd8e3;
+  }
+}

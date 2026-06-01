@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clindesk | Pacientes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="pagina">
+      <aside class="lateral">
+        <div class="zona-logo">
+          <img src="img/Logo.png" alt="Logo Clindesk" class="logo-imagen" />
+          <h1 class="logo-texto">Clindesk</h1>
+        </div>
+        <nav class="menu">
+          <a href="index.html">Inicio</a>
+          <a class="activo" href="pacientes.html">Pacientes</a>
+          <a href="detalle-paciente.html">Detalle Paciente</a>
+          <a href="nueva-cita.html">Nueva Cita</a>
+          <a href="admin.html">Administración</a>
+        </nav>
+      </aside>
+
+      <main class="contenido">
+        <header class="header">
+          <h2>Listado de pacientes</h2>
+          <a class="boton" href="nueva-cita.html">Programar cita</a>
+        </header>
+
+        <section class="bloque tabla">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+                <th>Estado</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>P-001</td>
+                <td>Lucía Gómez</td>
+                <td>600111222</td>
+                <td>lucia@correo.com</td>
+                <td class="estado-ok">Activo</td>
+                <td><a class="boton" href="detalle-paciente.html">Ver</a></td>
+              </tr>
+              <tr>
+                <td>P-002</td>
+                <td>Álvaro Ruiz</td>
+                <td>600333444</td>
+                <td>alvaro@correo.com</td>
+                <td class="estado-ok">Activo</td>
+                <td><a class="boton" href="detalle-paciente.html">Ver</a></td>
+              </tr>
+              <tr>
+                <td>P-003</td>
+                <td>María Torres</td>
+                <td>600555666</td>
+                <td>maria@correo.com</td>
+                <td class="estado-pendiente">Pendiente</td>
+                <td><a class="boton" href="detalle-paciente.html">Ver</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
